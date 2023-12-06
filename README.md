@@ -9,9 +9,15 @@ docker run -d \
   ghcr.io/kmlucy/docker-ssh
 ```
 
-If you want permanent host keys or to modify the `sshd_config`, copy out the ssh directory once the container is running: `docker cp bastion:/etc/ssh /path/to/ssh/dir`
+If you want permanent host keys or to modify the `sshd_config`, copy out the ssh directory once the container is running:
+```
+docker cp bastion:/etc/ssh /path/to/ssh/dir
+```
 
-Then mount it during run: `-v /path/to/ssh/dir:/etc/ssh:ro`
+Then mount it during run:
+```
+-v /path/to/ssh/dir:/etc/ssh:ro
+```
 
 Use
 ```
