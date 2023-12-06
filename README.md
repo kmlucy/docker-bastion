@@ -1,6 +1,6 @@
 # docker-bastion
 
-Run
+### Run
 ```
 docker run -d \
   --name=bastion \
@@ -19,7 +19,7 @@ Then mount it during run:
 -v /path/to/ssh/dir:/etc/ssh:ro
 ```
 
-Use
+### Use
 ```
 ssh -J bastion@bastion.fqdn:2222 target.fqdn
 ```
